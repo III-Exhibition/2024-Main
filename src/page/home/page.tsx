@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 import { sectionInfo } from "@/models/section";
-import { WithHeader } from "@/utils/hocs/WithHeader/WithHeader";
+import { WithHeader, WithRegisterButton } from "@/utils/hocs";
 
 import { HeroareaSection } from "@/components/section/heroarea";
 import { Footer } from "@/components/shared/Footer";
@@ -34,9 +34,11 @@ export const HomePage = () => {
         <div className={styles.root} ref={scrollContainer}>
             <HeroareaSection />
             <WithHeader>
-                {sectionInfo.map((section) => (
-                    <section.node key={section.id} />
-                ))}
+                <WithRegisterButton>
+                    {sectionInfo.map((section) => (
+                        <section.node key={section.id} />
+                    ))}
+                </WithRegisterButton>
             </WithHeader>
             <Footer />
         </div>

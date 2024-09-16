@@ -1,0 +1,1 @@
+export { WithRegisterButton } from "./WithRegisterButton";
