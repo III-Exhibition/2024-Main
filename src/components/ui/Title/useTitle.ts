@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import * as THREE from "three";
 import { Font, FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 
-import { ParticleData } from "@/models/global";
-
 import { Environment } from "./internal/environment";
 
 export const useTitle = (magicRef: React.RefObject<HTMLDivElement>) => {

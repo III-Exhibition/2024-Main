@@ -1,8 +1,6 @@
 import * as THREE from "three";
 import { Font } from "three/examples/jsm/Addons.js";
 
-import { ParticleData } from "@/models/global";
-
 import { vertexShader, fragmentShader } from "./shader";
 
 export class particleSystem {
