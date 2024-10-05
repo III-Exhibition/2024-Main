@@ -21,13 +21,12 @@ export const useTitle = (magicRef: React.RefObject<HTMLDivElement>) => {
                 }
             };
 
-            const fontUrl = "/fonts/KleeOne-Regular.json";
+            const fontUrl = "/fonts/KleeOne-Title.json";
             new FontLoader(manager).load(fontUrl, (font) => {
                 typo = font;
             });
 
-            const particleImgUrl =
-                "https://res.cloudinary.com/dfvtkoboz/image/upload/v1605013866/particle_a64uzf.png";
+            const particleImgUrl = "/particle.png";
             new THREE.TextureLoader(manager).load(particleImgUrl, (texture) => {
                 particle = texture;
             });
