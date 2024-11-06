@@ -27,37 +27,7 @@ export const WorksPickUp: React.FC<PropType> = ({ slides }) => {
         if (!emblaApi) return;
         setCurrentIndex(emblaApi.selectedScrollSnap()); // Get the current index
     }, [emblaApi]);
-    /**
-     * 現状利用していないのでコメントアウトする
-     * hover時にauto playをdisableする際などに参考に
-     */
-    /* eslint-disable @typescript-eslint/no-unused-vars */
     const [_, setIsPlaying] = useState(false);
-
-    // const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } =
-    //     usePrevNextButtons(emblaApi);
-
-    // const onButtonAutoplayClick = useCallback(
-    //     (callback: () => void) => {
-    //         const autoplay = emblaApi?.plugins()?.autoplay;
-    //         if (!autoplay) return;
-
-    //         const resetOrStop =
-    //             autoplay.options.stopOnInteraction === false ? autoplay.reset : autoplay.stop;
-
-    //         resetOrStop();
-    //         callback();
-    //     },
-    //     [emblaApi]
-    // );
-
-    // const toggleAutoplay = useCallback(() => {
-    //     const autoplay = emblaApi?.plugins()?.autoplay;
-    //     if (!autoplay) return;
-
-    //     const playOrStop = autoplay.isPlaying() ? autoplay.stop : autoplay.play;
-    //     playOrStop();
-    // }, [emblaApi]);
 
     const handlePlay = useCallback(() => {
         const autoplay = emblaApi?.plugins()?.autoplay;
