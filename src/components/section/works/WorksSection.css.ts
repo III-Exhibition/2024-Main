@@ -53,7 +53,8 @@ export const subContainerStyles = {
         flex: "auto",
         overflow: "hidden",
         display: "flex",
-        justifyContent: "center",
+        flexDirection: "column",
+        justifyContent: "start",
         alignItems: "center",
     }),
 };

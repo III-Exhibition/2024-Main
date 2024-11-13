@@ -86,7 +86,7 @@ export const WorksCarousel: React.FC<PropType> = ({ place, works }) => {
                 <div className={styles.arrowButtonContainer}>
                     <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                 </div>
-                <h3>{works[selectedIndex].title}</h3>
+                <h3>{works[selectedIndex]?.title}</h3>
             </section>
         </div>
     );

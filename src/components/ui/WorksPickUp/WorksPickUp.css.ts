@@ -42,7 +42,7 @@ export const styles = {
         transform: "translate3d(0, 0, 0)",
         flex: `0 0 ${slideSize}`,
         minWidth: 0,
-        paddingLeft: `${slideSpacing}`,
+        // paddingLeft: `${slideSpacing}`,
     }),
     emblaSlideContent: style({
         display: "block",

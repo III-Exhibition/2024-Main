@@ -13,9 +13,9 @@ import { styles, subContainerStyles } from "./WorksSection.css";
 
 export const WorksSection: FC = () => (
     <SectionContainer id="works" title="WORKS" className={styles.root}>
-        <SubContainer label="ピックアップ" withBorder className={styles.pickUp}>
+        <PickUpContainer label="ピックアップ" withBorder className={styles.pickUp}>
             <WorksPickUp slides={workList} />
-        </SubContainer>
+        </PickUpContainer>
         <SubContainer
             label="全作品"
             className={styles.allWorks}
@@ -60,5 +60,20 @@ export const SubContainer: FC<SubContainerProps> = ({
             {sublabel && <span className={subContainerStyles.sublabel}>{sublabel}</span>}
         </h2>
         <div className={clsx(subContainerStyles.content, className)}>{children}</div>
+    </div>
+);
+
+export const PickUpContainer: FC<SubContainerProps> = ({
+    label,
+    withBorder = false,
+    sublabel,
+    children,
+}) => (
+    <div className={subContainerStyles.root}>
+        <h2 className={subContainerStyles.label({ withBorder })}>
+            {label}
+            {sublabel && <span className={subContainerStyles.sublabel}>{sublabel}</span>}
+        </h2>
+        <div>{children}</div>
     </div>
 );

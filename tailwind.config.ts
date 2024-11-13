@@ -19,6 +19,7 @@ const config: Config = {
             "conpect-en": ["Playfair Light"],
             serif: ["游明朝体", "Yu Mincho", "YuMincho"],
             gothic: ["Zen Kaku Gothic Antique"],
+            "works-title": ["Playfair Display SC", "游明朝体", "Yu Mincho", "YuMincho"],
         },
     },
     plugins: [],

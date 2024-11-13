@@ -6,14 +6,14 @@
     @font-face {
         font-family: "Klee One Regular";
         font-style: normal;
-        font-weight: Regular;
+        font-weight: 400;
         font-display: swap;
         src: url(/fonts/KleeOne-Regular.woff2) format("woff2");
     }
     @font-face {
         font-family: "Playfair Light";
         font-style: normal;
-        font-weight: Light;
+        font-weight: 300;
         font-display: swap;
         src: url(/fonts/Playfair9pt-Light.woff2) format("woff2");
     }
@@ -48,6 +48,22 @@
         font-weight: 700;
         font-display: swap;
         src: url(/fonts/ZenKakuGothicAntique-Bold.woff2) format("woff2");
+    }
+
+    @font-face {
+        font-family: "Playfair Display SC";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/PlayfairDisplaySC-Regular.woff2) format("woff2");
+    }
+
+    @font-face {
+        font-family: "Playfair Display SC";
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/PlayfairDisplaySC-Italic.woff2) format("woff2");
     }
 }
 
